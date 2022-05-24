@@ -1,0 +1,50 @@
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.contact{
+    width:1000px;
+    height:500px;
+    border: 0.5px solid orange;
+    display: flex;
+    justify-content: center;
+    vertical-align:  center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(90, 86, 86, 0.158);
+    font-family: arial;
+}
+.contact .email, .mail,.phone{
+    text-align: center;
+    width:33%;
+    height:60%;
+    border: 0.4px Dashed orange;
+    margin-top: 80px;
+}
+i{
+    font-size: 50px;
+    color:orange;
+}
+@media all and (max-width:800px){
+    .contact{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact .email,.mail,.phone{
+        width:100%;
+    }
+    .home a{
+        font-family:sans-serif;
+        font-weight:bolder;
+
+    }
+    .home a:hover{
+        background-color: brown;
+    }
+}

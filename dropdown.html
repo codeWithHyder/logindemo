@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        body{
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        ul{
+            box-sizing: border-box;
+            background-color: #38444a;
+            height: 70px;
+            width:100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li {
+            display: inline-block;
+            margin: 0px 5px 4px 0px;
+            
+           /* background-color: blueviolet;*/
+            height: 100%;
+            padding: 0px;
+            overflow: hidden;
+           
+         
+            
+        }
+      ul li a:not(.dropdown-content){
+          display:inline-block;
+          color:white;
+          text-decoration: none;
+         /* background-color: rgb(236, 166, 79);*/
+          margin: 5px 5px 0px 5px;
+          padding: 10px;
+          font-size: 20px;
+          font-family: sans-serif;
+      } 
+      li.dropdown{
+          display:inline-block;
+          
+      }
+      .dropdown .dropdown-content {
+          display:none;
+          position: absolute;
+          z-index: 1;
+          background-color: rgba(183, 127, 236, 0.842);
+          width:180px;
+          margin-top: 17px;
+      }
+      .dropdown .dropdown-content a{
+          display: block;
+          /*background-color: rgb(125, 180, 206);*/
+         /* margin-top: 5px;*/
+          /*border-bottom: 0.5px so #e01313;*/
+          margin:0px; 
+          transition: 0.4s all ease;
+          
+         
+      }
+      li a:hover{
+          background-color: tomato;
+      }
+        li.dropdown:hover .dropdown-content {
+          display:block;
+         /* background-color: tomato;*/
+        }
+           
+      .dropdown-content a:hover{
+        background-color: rgb(238, 104, 104);
+        
+        overflow: hidden;
+        
+      
+      
+
+      }
+      
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown"><a href="#">Trades
+            <div class="dropdown-content">
+               <a href="#">COPA</a>
+               <a href="#">Sewing Tech</a>
+               <a href="#">Plumber</a>
+               <a href="#">Stenography</a>
+               <a href="#">DMC</a>
+            </div>
+        </a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,347 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url("background1.webp");
+    background-size: cover;
+    background-position:center;
+    font-family: sans-serif;
+    
+  
+}
+
+
+nav{
+    width:100%;
+    
+    height: 70px;
+    background-color:rgba(44, 40, 39, 0.445);
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+
+    
+    /*justify-content: center;*/
+    
+    font-weight:bolder;
+}
+nav .navbar{
+
+    display:flex;
+    margin-left: 400px;
+    line-height: 100%;
+    transition:0.4 all ease;
+   
+    /*justify-content: space-around;*/
+      
+    
+    
+}
+nav .navbar a{
+    
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 23px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+     
+    
+    margin-left: 70px;
+    
+    
+    /*align-items: center;*/
+    
+}
+nav .navbar a:hover{
+    /*background-color: rgb(241, 32, 32);*/
+    border-bottom: 1px solid #f5efef;
+  
+}
+nav .login .btnlogin1{
+
+    margin-left: 150px;
+    width:100px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight:bold;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    transition:0.3s all ease;
+    
+
+}
+nav .login .btnlogin1:hover{
+    background-color:rgb(64, 6, 87);
+    color:white;
+}
+.sections {
+    display:flex;
+    
+}
+.section1, .section2,.section3{
+    margin-left: 5px;
+    border-radius: 1px dash black;
+}
+.section1 img, .section2 img,.section3 img{
+    margin-top:5px;
+    
+    padding-left:5px;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    display:flex;
+    width:100%;
+    background-color: blueviolet;
+
+}
+.images div{
+   width:25%;
+}
+.images div img{
+  width:100%;
+  height:200px;
+}
+.clients{
+    display: flex;
+    background-color: rgb(194, 84, 20);
+    width:100%;
+}
+.clients .client1,.client2,.client3{
+    width:33%;
+    height:200px;
+    text-align: center;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:40px;
+    width:100%;
+}
+
+.footer .icons a img{
+    margin-top: 20px;
+    margin-bottom: 5px;;
+    width:30px;
+    height:30px;
+    margin-left: 8px;
+}
+.loginform{
+    height: 350px;
+    width:290px;
+    background-color: rgba(60, 60, 221, 0.753);
+    display:none;
+    position:absolute;
+    top:70px;
+    left:78.3%;
+    border-radius: 8px;
+  
+}
+.loginform .form1{
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.loginform .form2{
+    margin-left: 15px;
+    margin-top: -5px;
+    transition: 0.5s  ease;
+    
+}
+.loginform input[type=text],input[type=password],button,input[type=date],input[type=email] {
+    display:flex;
+    flex-direction: column;
+    width:94%;
+    height:45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10x;
+    margin-right: 0px;
+    border-radius:5px;
+   border:0px;
+   
+   /* background: transparent;*/
+    outline: 0;
+   border-bottom: 2px rgb(250, 245, 245);
+ 
+}
+loginform .form2 input[type=text],input[type=email],input[type=date]{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.loginform .form1 button{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 0 0 0px 2px #f3f3f3;
+    transition:0.3s ease;
+
+}
+.loginform .form1 button:hover{
+    background-color: #999696;
+    cursor:pointer;
+    
+}
+.loginform h2{
+    text-align: center;
+    font-weight: bolder;
+}
+.form1 .divregister{
+    height:30px;
+    width:70px;
+    text-align: center;
+    margin-top: 10px;
+}
+ .form1 .divregister{
+    background-color: rgb(236, 150, 89);
+    border:1px #999;
+    border-radius: 5px;
+    padding-top: 10px;
+    text-decoration: none;
+    
+}
+
+.loginform .form2{
+   /* background-color: aquamarine;*/
+    display:none;
+}
+.loginform .form2 #btnsubmit1 {
+      padding: 10px 70px;
+      font-size: larger;
+      font-weight: bold;
+      cursor: pointer;
+}
+ .form2 p a:link{
+     background-color: rgb(231, 146, 17);
+     border-radius: 5px;
+    color:white;
+}
+.loginform .form2  .btnsubmit1:hover{
+    background-color: #927878;
+    transition: 0.4s ease;
+}
+.loginform .closebtn i{
+    color: whitesmoke;
+    font-size: medium;
+    position:relative;
+    top:-5px;
+    left:95%;
+}
+.footer .icons a img:hover{
+    transition: 0.4s all ease;
+    transform:scale(1.5);
+}
+.images img:hover{
+    transform:scale(1.1);
+    transition:0.5s all ease;
+    cursor:pointer;
+}
+.footer .icons a img{
+     border-radius: 50%;   
+     box-shadow: 0 0 2px 3px #999;
+}
+.loginform .closebtn i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    background-color: #999696;
+    border-radius: 50%;
+    transition:0.4s ease;
+}
+.loginform .form1 a:link{
+    color:whitesmoke;
+}
+.loginform .form1 a:visited{
+    color: rgb(100, 8, 8);
+}
+@media all and (max-width:800px){
+    nav{
+        flex-direction: column;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    nav .logo {
+        width:100%;
+      /*  background-color: green;*/
+        text-align: center;
+    }
+    nav .navbar{
+        flex-direction: column;
+       
+        /*background-color: blueviolet;*/
+        width:100%;
+        margin-left: 0px;
+       
+
+    }
+    nav .navbar a{
+        width:100%;
+        margin-left:0px;
+      /*  background-color: aqua;*/
+        text-align: center;
+        margin: 4px 0px;
+        
+       
+       
+    }
+    nav .navbar a:hover{
+        background: #999696;
+        border-bottom: none;
+        /*border: 0.5px solid tomato;*/
+    }
+    nav .login .btnlogin1{
+        margin: 0px;
+       /* background-color: crimson;*/
+        width:100%;
+        text-align: center;
+    }
+    .loginform{
+        position:absolute;
+        top:180px;
+        left:30%;
+        background-color: blueviolet;
+        
+    }
+    .sections{
+        flex-direction: column;
+        background:none;
+        
+    }
+    .sections .section1 ,.section2 , .section3 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+    }
+    .images{
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .images div{
+        width:100%;
+    }
+    .images div img{
+        height:300px;
+        height:300px;
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .clients .client1,.client2,.client3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar with hover effects</title>
+    <link rel="stylesheet" href="style11.css">
+    <script src="https://kit.fontawesome.com/085384e239.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Trades</a> 
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="login">
+            <button type="button" class="btnlogin1" id="btnlogin" onclick="btnlogin()">Login</button>
+        </div>
+    </nav> 
+    <div class="sections">
+        <div class="section1">
+          
+          <img src="computer-training-500x500.png">
+          <h1>TRADE COPA</h1>
+          <p>Regarding copa trade</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio exercitationem rerum officia! Labore atque, ipsum quia tenetur, molestias provident at<br> facilis dolorem corporis non rerum temporibus <br>laudantium doloremque minus.</p>
+        </div>
+         <div class="section2">
+            <img src="sewing.jpg">
+             <h1>TRADE SEWING TECH.</h1>
+            <p>Regarding Sewing tech trade</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio exercitationem rerum officia! Labore atque, ipsum quia tenetur, molestias provident at<br> facilis dolorem corporis non rerum temporibus <br>laudantium doloremque minus.</p> 
+        </div>
+        <div class="section3">
+            <img src="plumber1.jpg">
+            <h1>TRADE PLUMBER</h1>
+            <p>Regarding plumber trade</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus distinctio exercitationem rerum officia! Labore atque, ipsum quia tenetur, molestias provident at<br> facilis dolorem corporis non rerum temporibus <br>laudantium doloremque minus.</p> 
+        </div>
+             
+    </div>
+    <div class="images">
+        <div>
+            
+            <img src="computer-training-500x500.png" alt="img1">
+        </div>
+        <div>
+    
+            <img src="sewing.jpg" alt="img1">
+        </div>
+        <div>
+            
+            <img src="plumming.jpg" alt="img1">
+        </div>
+        <div>
+            
+            <img src="computer-training-500x500.png" alt="img1">
+        </div>
+    </div>
+    <div class="clients">
+        <div class="client1">
+            <h1>----Result 2019</h1>
+            <p>Trade COPA: 100%</p>
+             <p>Trade Sewing Tech.: 80%</p>
+             <p>Trade Plumber:70%</p>
+             <p>Trade Stenography: 50%</p>
+        </div>
+        <div class="client2">
+            <h1>Result 2020</h1>
+            <p>Trade COPA: 100%</p>
+            <p>Trade Sewing Tech.: 80%</p>
+            <p>Trade Plumber:70%</p>
+            <p>Trade Stenography: 50%</p>
+        </div>
+        <div class="client3">
+            <h1>Result 2021</h1>
+            <p>Trade COPA: 100%</p>
+            <p>Trade Sewing Tech.: 80%</p>
+            <p>Trade Plumber:70%</p>
+            <p>Trade Stenography: 50%</p>
+        </div>
+    </div> 
+    
+    
+    <footer class="footer">
+        <div class="icons">
+           <a href="https://www.facebook.com/Iti-gurez-105036867973349"> <img src="./facebook.png"></a>
+           <a href="#" ><img src="insta1.png"></a>
+           <a href="#"><img src="google.png"></a>
+           <a href="#"> <img src="twiter321.png"></a>
+        </div>
+         <div class="copyright"> <p>&copy;COPY Right ITI GUREZ COPA Batch 2022 </p></div>
+    </footer>
+    <div id="login" class="loginform">
+        <div class="closebtn"><i class="fa-solid fa-circle-xmark" onclick="btnclose1()"></i></div>
+        <!--ligin form-->
+        
+             <form action="#" post="get" autocomplete="on" class="form1" id="form1log">
+            <h2>Login Form</h2>
+            <label for="username" id="username">User Name</label>
+            <input type="text" id="username" placeholder="Enter user name" required>
+            <label for="password" id="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <button type="button" id="btnsubmit" onclick="#">Login</button>
+        <!-- <button type="button" id="btnclose" onclick="btnclose1()">close</button>-->
+        <!-- <p>If new then<a href="#">SignUp</a></p>-->
+            <p><a href="#">Forget the password</a></p>
+            <div class="divregister"> <a href="#" onclick="signup()">SignUp</a></div>
+            </form>
+        
+       <!--registration form-->
+       
+             <form action="#" post="get" autocomplete="on" class="form2" id="form2reg">
+            <h2>Registration Form</h2>
+            <label for="username" id="username"> Name:</label>
+            <input type="text" id="username" placeholder="Enter  Name" required>
+            <label for="email" id="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="date" id="date">D.O.B</label>
+            <input type="date" id="date" placeholder="Enter your D.O.B" required>
+            <button type="button" id="btnsubmit1" onclick="">Register</button>
+        <!-- <button type="button" id="btnclose" onclick="btnclose1()">close</button>-->
+            <p>Already account&nbsp; <a href="#" onclick="loginform()"> LogIn</a></p>
+            
+            </form>
+          
+
+    </div>
+    <script>
+        function btnlogin(){
+        document.getElementById('login').style.display="block";
+        document.getElementById('form2reg').style.display="none";
+        document.getElementById('form1log').style.display="block";
+       }
+       function btnclose1(){
+        document.getElementById('login').style.display="none";
+      }
+      function btnsubmit1(){
+          alert("you susscessfully logged in!");
+         let username= document.getElementById('username');
+        let password=  document.getElementById('password');
+        username.value="";
+        password.value="";
+      }
+      function signup(){
+          document.getElementById("form2reg").style.display="block";
+          document.getElementById("form1log").style.display="none";
+          
+      }
+      function loginform(){
+          document.getElementById("form1log").style.display="block";
+          document.getElementById("form2reg").style.display="none";
+      }
+    </script>
+</body>
+</html>
